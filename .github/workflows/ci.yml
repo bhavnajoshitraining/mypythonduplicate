@@ -1,0 +1,23 @@
+name: CI Demo Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Display repo files
+        run: ls -la
+
+      - name: Print message
+        run: echo "🎉 GitHub Actions is running successfully!"

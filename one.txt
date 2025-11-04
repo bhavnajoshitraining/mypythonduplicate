@@ -1,1 +1,9 @@
-hello
+git clone https://github.com/bhavnajoshitraining/mypythonduplicate.git
+cd mypythonduplicate
+git checkout -b mypythonduplicate
+git add .
+git commit -m "added new feature or new files"
+git push -u origin mypythonduplicate
+git status
+git log
+cls
